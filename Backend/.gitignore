@@ -1,0 +1,32 @@
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Environment variables file
+.env
+
+# Logs
+logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Compiled output
+dist/
+
+# Coverage directory
+coverage/
+
+# Ignore package-lock.json for npm 5.x and above
+package-lock.json
+
+# If using yarn, uncomment the following line
+# yarn.lock
