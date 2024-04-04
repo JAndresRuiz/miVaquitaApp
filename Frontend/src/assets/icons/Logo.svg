@@ -1,5 +1,5 @@
-<svg width="47" height="37" viewBox="0 0 47 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="23.8615" cy="18.5" rx="18.0769" ry="18.5" fill="#CEFCFF"/>
+<svg width="47" height="37" viewBox="0 0 47 37" color="#CEFCFF" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="23.8615" cy="18.5" rx="18.0769" ry="18.5" fill="currentColor"/>
 <mask id="mask0_265_13789" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="47" height="37">
 <path d="M2.54198 0C1.1382 0 0 1.07817 0 2.40797V34.592C0 35.9218 1.1382 37 2.54198 37H44.458C45.862 37 47 35.9218 47 34.592V2.40797C47 1.07817 45.862 0 44.458 0H2.54198Z" fill="white"/>
 </mask>
