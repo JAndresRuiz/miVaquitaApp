@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './Styles/input.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import {Groups} from "./components/Groups.jsx";
-import {Friend} from "./components/Friend.jsx";
-import {Bills} from "./components/Bills.jsx";
+import { Friends } from "./components/Friends.jsx";
+import { Bills } from "./components/Bills.jsx";
+import { Groups } from './components/Groups.jsx';
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
   { path: "/groups", element: <Groups /> },
-  { path: "/friends", element: <Friend /> },
+  { path: "/friends", element: <Friends /> },
   { path: "/bills", element: <Bills /> }
 ]);
 

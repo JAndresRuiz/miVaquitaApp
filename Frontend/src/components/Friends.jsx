@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header';
 
-const Friend = () => {
+const Friends = () => {
   return (
     <>
       <Header />
@@ -10,4 +10,4 @@ const Friend = () => {
   )
 }
 
-export {Friend};
+export {Friends};
