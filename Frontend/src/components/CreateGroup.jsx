@@ -17,18 +17,23 @@ const CreateGroup = ({ isOpen, closeModal }) => {
 
 const [name, setName] = useState("");
 const [color, setColor] = useState("");
-const [selectedColor, setSelectedColor] = useState('#FFFFFF');
+const [debt, setDebt] = useState(0);
+const [selectedColor, setSelectedColor] = useState('');
 
 const fetchData = async () => {
-  const response = await axios.post('http://localhost:3001/group/', {name: name, color: color} )
+  const response = await axios.post('http://localhost:3001/group/', {name: name, color: color, debt:debt} )
   .then((res) => {
     closeModal();
     alert("Grupo Creado exitosamente")
   })
+  setName("");
+  setColor("");
+  setSelectedColor('');
 };
 
 const  onSelectColor = (color) => {
   setSelectedColor(color);
+  setColor(color);
 };
 
   if (!isOpen) return null;
@@ -59,8 +64,3 @@ const  onSelectColor = (color) => {
 };
 
 export default CreateGroup;
-
-
-// className={`w-8 h-8 border border-gray-300 cursor-pointer rounded-md relative ${
-//   selectedColor === color ? 'border-4 border-black' : ''
-// }`}

@@ -3,6 +3,7 @@
  * {
  *  id: number,
  *  name: string,
+ *  debt: number,
  *  color: string,
  * }
  * 

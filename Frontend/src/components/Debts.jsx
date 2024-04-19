@@ -1,7 +1,6 @@
 import React from 'react'
 
-
-const Debt = ({setModalOpen, modalOpen }) => {
+const Debts = ({setModalOpen, modalOpen }) => {
   return (
     <div className={`${modalOpen ? 'bg-gray-500 h-screen opacity-50' : null} absolute w-screen`}>
         <div className={`p-8 flex flex-row justify-between w-full`}>
@@ -19,4 +18,4 @@ const Debt = ({setModalOpen, modalOpen }) => {
   )
 }
 
-export default Debt
+export default Debts

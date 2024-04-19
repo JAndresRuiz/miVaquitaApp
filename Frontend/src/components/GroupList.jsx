@@ -3,7 +3,7 @@ import axios from 'axios';
 import Logo from '../assets/icons/Logo.svg?react';
 
 const GroupList = () => {
-  const [data, setData] = useState([]); // State para almacenar los datos de la API
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -13,8 +13,10 @@ const GroupList = () => {
       setData(data);
     };
 
+    console.log(data.error);
+
     fetchData();
-  }, []); // Se ejecuta solo al montar el componente
+  }, []);
 
   return (
     <>
@@ -31,7 +33,7 @@ const GroupList = () => {
               <div>
                 <h2 className='font-semibold text-xl'>{item.name}</h2>
                 <h3 className='font-semibold text-m'>
-                  Debes <span className='text-red-700'>$12.000</span>
+                  Debes: <span className='text-red-700'>${item.debt}</span>
                 </h3>
               </div>
               <div className='w-max flex justify-between'>
